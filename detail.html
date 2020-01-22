@@ -1,0 +1,95 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Mes Veilles.</title>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-light blueBG">
+            <a id="name_perso" class="navbar-brand" href="#">
+                <img src="assets/img/one-piece.png" width="50" height="50" class="d-inline-block align-top" alt="">
+                Fong Tea
+            </a>
+            <h5>Blog de mes Veilles Technologiques</h5>
+        </nav>
+        <div class="container mt-5">
+
+            <div id="affiche_veille">
+                <div class="row">
+                    <div class="col-1">
+                        <div id="key_veille"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <div id="id_veille"></div>
+                    </div>
+                    <div class="col-10">
+                        <div id="intro">Ma Veille du <span id="date"></span> </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <h2 id="subject"></h2>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <div id="synthesis"></div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <div id="comments"></div>
+                    </div>
+                </div>
+                <div class="row m-3">
+                    <div class="col">
+                        <div id="image"> <img src="" alt="" width="450px"> </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        Le lien:
+                    </div>
+                    <div class="col-10">
+                        <a href=""> <span class="links"></span></a>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <a href="index.html" id="reset" class="btn">Retour</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <script src="assets/js/jquery-3.4.1.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/airtable.browser.js"></script>
+        <script src="assets/js/script.js"></script>
+        <script>
+            $(document).ready(function () {
+
+                setTimeout(function () {
+                    var monStockage = localStorage.getItem("id")
+                    getVeille(monStockage)
+                }, 500);
+
+            })
+        </script>
+    </body>
+
+    </html>

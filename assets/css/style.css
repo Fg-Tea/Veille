@@ -1,0 +1,83 @@
+    @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Zhi+Mang+Xing&display=swap');
+
+    .blueBG {
+        background: rgba(78, 78, 245, 0.5);
+    }
+
+    body {
+        background: black;
+        font-family: 'Playfair Display', serif;
+    }
+
+    .navbar-light,
+    h5 {
+        color: white;
+        font-size: 1.7em;
+        font-family: 'Zhi Mang Xing', cursive;
+    }
+
+    #name_perso {
+        font-size: 1.5em;
+    }
+
+    .container-fluid {
+        padding: 0 8%;
+    }
+
+    #titres_liste {
+        font-family: 'Zhi Mang Xing', cursive;
+        text-align: center;
+        color: rgb(23, 165, 221);
+        font-size: 2em;
+        text-decoration: underline;
+    }
+
+    #liste_titres {
+        background: rgba(78, 78, 245, 1);
+        padding: 2%;
+        line-height: 30px;
+        overflow: scroll;
+        height: 550px;
+        width: 100%;
+    }
+
+    #affiche_veille {
+        background: rgba(78, 78, 245, 1);
+        padding: 30px;
+        line-height: 35px;
+        font-size: 1.2em;
+        color: black;
+    }
+
+    h2 {
+        color: white;
+        font-size: 2.3em;
+        text-align: center;
+        font-family: 'Zhi Mang Xing', cursive;
+    }
+
+    #intro,
+    #id_veille {
+        color: rgb(6, 99, 206);
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+
+    #synthesis,
+    #comments {
+        text-indent: 50px;
+    }
+
+    #links {
+        color: white;
+        font-style: italic;
+    }
+
+    #image {
+        margin-left: 25%;
+    }
+
+    #reset {
+        margin-left: 40%;
+        background: rgb(23, 165, 221);
+    }
